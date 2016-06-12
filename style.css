@@ -1,0 +1,237 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: gray;
+	color: black;
+}
+#contenedor
+{
+	width:100%;
+	height:130%;
+	margin-right:auto;
+	margin-left: auto;
+}
+header
+{
+	background-color: orange;
+	width: 83%;
+	height: 150px;
+	text-align: center;
+	font-size: 280%;
+    font-family: "Gabriola";
+    background-image: url(header.jpg);
+}
+#infor
+{
+   overflow: scroll;
+   height: 590px;
+   width: 99.2%;
+   background-image: url(fondo_chaitea.jpg);
+}
+#logo
+{
+    background-image: url(fe986188cd747bd4ebcab98f66f3068a.jpg);
+    width: 15.8%;
+    height: 150px;
+    background-color: red;
+}
+#logo,header
+{
+	display: inline-block;
+	vertical-align: top;
+}
+p
+{
+    margin-left: 300px;
+    font-size: 20px;
+}
+footer
+{
+	background-color: saddlebrown;
+    width: 99.2%;
+	text-align: center;
+	height: 60px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+/*Inicio de diseño responsivo*/
+@media handheld, only screen and (min-width: 1024px){
+    div#acerca_de_nosotros,div#afiliados,div#consultas,div#atencion_al_cliente,div#catalogo,div#preguntas_frecuentes,div#contactenos
+    {
+        display: none;
+    }
+    aside
+    {
+        display: none;
+    }
+}
+
+@media(max-width: 800px){
+    body
+    {
+        background-color: yellow;
+        background-image: url(4.JPG);
+    }    
+    .sidebar,.contenido,#iniciar_sesion
+    {
+       display: none; 
+    }
+    p
+    {
+        margin-left: 0px;
+    }
+    aside
+    {
+        background-color: orange;
+        max-width: 100%;
+        width: 99.2%;
+        height: 60px;
+        text-align: center;
+    }
+    #infor
+    {
+        position: relative;
+        margin-top: 50px;
+    }
+    header
+    {
+        font-size: 210%;
+        width: 100%;
+    }
+    #logo
+    {
+        width: 100%;
+    }
+}
+@media(max-width: 500px){
+    body
+    {
+        background-color: green;
+    }
+    
+}
+/*fin diseño responsivo*/
+.sidebar 
+{
+    margin-top: 148px;   
+    position: absolute;    
+    width: 250px;
+    height: 638px;
+    background: green;
+    top:2px;
+	color: white;
+    overflow:hidden;
+           
+ }
+.sidebar h2 
+{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: green;
+}
+.sidebar li:hover 
+{
+    background: grey;
+    border-left: 5px solid #eee;
+}
+.sidebar li
+{
+    outline: 1px solid greenyellow;
+    transition:all 0.3s;
+}
+.sidebar a 
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.contenido 
+{
+    margin-top: 150px;	
+    width: 190px;
+    height: 580px;
+    position: absolute;
+    top:0px;
+    background: white;
+    padding: 30px;
+    transition:all 0.5s; 
+    opacity: 0.4;      
+}
+.menu-bar
+{
+    cursor: pointer;
+}
+.abrir 
+{
+    transform: translateX(250px);
+}
+#principal
+{
+    background-image: url(4.JPG);
+    height: 64px;
+    width: 99.1%;
+}
+#acerca_de_nosotros,#afiliados,#consultas,#atencion_al_cliente,#catalogo,#preguntas_frecuentes,#contactenos
+{
+    display: inline-block;
+    vertical-align: top;
+}
+#acerca_de_nosotros,#afiliados,#consultas,#atencion_al_cliente,#catalogo,#preguntas_frecuentes,#contactenos
+{
+   border:groove;
+   background-color: lightgray;
+   border-radius: 9px;
+   margin-left: 10px;  
+   width: 75px;
+   height: 50px;
+   font-size: 100%;
+   font-family: "Gabriola";
+   color: black;
+}
+#acerca_de_nosotros:hover,#afiliados:hover,#consultas:hover,#atencion_al_cliente:hover,#catalogo:hover,#preguntas_frecuentes:hover,#contactenos:hover{
+    background-color: white;
+}
+#iniciar_sesion
+{
+    margin-top: 7px;
+    border:groove;
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+    font-size: 120%;
+    border-radius: 9px;
+    float: right;
+    margin-right: 20px;
+    font-family: "Gabriola";
+    color: black;
+}
+#iniciar_sesion:hover{
+   background-color: white;
+}
+#iniciar_sesion1,#registrarse
+{
+    display: inline-block;
+	vertical-align: top;
+}
+#iniciar_sesion1,#registrarse
+{
+    margin-top: 7px;
+    border:groove;
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+    font-size: 120%;
+    border-radius: 9px;
+    margin-right: 20px;
+    font-family: "Gabriola";
+    color: black;
+}
+#registrarse:hover,#iniciar_sesion1:hover{
+   background-color: white;
+}
